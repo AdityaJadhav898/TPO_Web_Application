@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traning & Placment Office</title>
+    <link rel="stylesheet" href="internship.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">PLACMENT</a>
+                            <ul>
+                                <li><a href="#">COMPS</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">EXTC</a></li>
+                                <li><a href="#">MECH</a></li>
+                            </ul>   
+                    </li>
+                    <li><a href="internship.html">INTERNSHIP</a></li>
+                    <li><a href="#">COMPANIES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Traning & <br><span>Placment</span> <br>Office</h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
+                 expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
+                <br> a quae totam ipsa illum minus laudantium?</p>
+                <div class="chart">
+                    <head>
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                          google.charts.load('current', {'packages':['bar']});
+                          google.charts.setOnLoadCallback(drawChart);
+                    
+                          function drawChart() {
+                            var data = google.visualization.arrayToDataTable([
+                              ['Year', 'Applied', 'Accepted', 'Rejected'],
+                              ['2014', 1000, 400, 200],
+                              ['2015', 1170, 460, 250],
+                              ['2016', 660, 1120, 300],
+                              ['2017', 1030, 540, 350]
+                            ]);
+                    
+                            var options = {
+                              chart: {
+                                title: 'Internship Record',
+                                subtitle: '',
+                              }
+                            };
+                    
+                            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+                    
+                            chart.draw(data, google.charts.Bar.convertOptions(options));
+                          }
+                        </script>
+                      </head>
+                      <body>
+                        <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+                      </body>  
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
